@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/cpi-scripts/cpi-scripts.iml" filepath="$PROJECT_DIR$/cpi-scripts/cpi-scripts.iml" />
       <module fileurl="file://$PROJECT_DIR$/cpi_groovy_scripts.iml" filepath="$PROJECT_DIR$/cpi_groovy_scripts.iml" />
     </modules>
   </component>

@@ -11,6 +11,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="cpi-scripts" target="8" />
+      <module name="SmokeTest01" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
