@@ -26,6 +26,12 @@ def Message processData(Message message) {
 
     def prop = message.getProperty("test")
 
+    prop = "modified"+ prop
+
+    message.setProperty("test1",prop)
+
+    message.setProperty("test",prop+"hello")
+
     def messageLog = messageLogFactory.getMessageLog(message)
     if (messageLog != null) {
         messageLog.addAttachmentAsString('My Attachment', body, 'text/plain')
@@ -33,7 +39,7 @@ def Message processData(Message message) {
 
     def output = test3()
 
-    message.setBody(prop)
+   message.setBody(prop)
     return message
 }
 

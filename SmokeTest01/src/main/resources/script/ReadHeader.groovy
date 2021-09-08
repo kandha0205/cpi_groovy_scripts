@@ -23,6 +23,9 @@ import java.util.HashMap;
 
 def Message processData(Message message) {
     def body = message.getBody(java.lang.String)
+
+    def prop = message.getProperty("test")
+
     def messageLog = messageLogFactory.getMessageLog(message)
     if (messageLog != null) {
         messageLog.addAttachmentAsString('My Attachment', body, 'text/plain')
@@ -30,7 +33,7 @@ def Message processData(Message message) {
 
     def output = test3()
 
-    message.setBody(output)
+    message.setBody(prop)
     return message
 }
 
